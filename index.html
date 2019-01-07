@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<title>Peatral</title>
-	
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="4CGWEICqGTCCVDp-CKksphEwI0jhARtpZzlzBXh53g4" />
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" href="src/icon.png" type="image/x-icon"/>
+	<link rel="icon" href="src/icon.png" type="image/x-icon" />
 	<style>
-		body {font-family: "Lato", sans-serif}
+		body {
+			font-family: "Lato", sans-serif
+		}
 	</style>
+
 	<body>
-		
+
 		<!-- Navbar -->
 		<div class="w3-top">
 			<div class="w3-bar w3-black w3-card">
-				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+				onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 				<a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
 				<a href="#infos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INFOS</a>
 				<a href="#whyme" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WHY ME</a>
 				<a href="#goingfurther" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GOING FURTHER</a>
 				<div class="w3-dropdown-hover w3-hide-small">
-					<button class="w3-padding-large w3-button" title="More">PRESENTATIONS <i class="fa fa-caret-down"></i></button>     
+					<button class="w3-padding-large w3-button" title="More">PRESENTATIONS <i class="fa fa-caret-down"></i></button>
 					<div class="w3-dropdown-content w3-bar-block w3-card-4">
 						<a href="https://peatral.github.io/Presentations/demo.html" class="w3-bar-item w3-button">reveal.js Demo</a>
 						<a href="https://peatral.github.io/Presentations/Digitalisierung.html" class="w3-bar-item w3-button">Digitalisierung</a>
@@ -31,51 +35,58 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 		<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
 			<a href="#infos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INFOS</a>
 			<a href="#whyme" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WHY ME</a>
 			<a href="#goingfurther" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GOING FURTHER</a>
 			<div class="w3-dropdown-hover">
-				<button class="w3-padding-large w3-button" title="More">PRESENTATIONS<i class="fa fa-caret-down"></i></button>     
+				<button class="w3-padding-large w3-button" title="More">PRESENTATIONS<i class="fa fa-caret-down"></i></button>
 				<div class="w3-dropdown-content w3-bar-block w3-card-4">
 					<a href="https://peatral.github.io/Presentations/demo.html" class="w3-bar-item w3-button">reveal.js Demo</a>
 					<a href="https://peatral.github.io/Presentations/Digitalisierung.html" class="w3-bar-item w3-button">Digitalisierung</a>
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Page content -->
-		<div class="w3-content w3-animate-opacity w3-text-white" style="max-width:2000px;margin-top:46px" >
+		<div id="appPageContent" class="w3-content w3-animate-opacity w3-text-white" style="max-width:2000px;margin-top:46px">
 			<!-- screen center -->
 			<div class="w3-display-container w3-center">
 				<img src="src/back.jpg" class="w3-image">
 				<div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
 					<h1 class="w3-jumbo w3-animate-top">Nothing here!</h1>
 					<hr class="w3-border-grey" style="margin:auto;width:40%">
-					<p class="w3-large w3-center">Yeah, that's life</p>  
+					<p class="w3-large w3-center">Yeah, that's life</p>
 				</div>
 			</div>
-			
+
 			<!-- The Infos Section -->
-			<div class="w3-container w3-content w3-center w3-padding-64 w3-text-black" style="max-width:800px;min-height:800px;height:100vh" id="infos">
-				<h2 class="w3-wide">INFOS</h2>
-				<p class="w3-opacity"><i>Just to clarify</i></p>
-				<p class="w3-justify">This is just a Website to host my School-Presentations I made with reveal.js. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>			
-				<div>
-					<img src="src/ACLogo8Bitgroß.png" class="w3-margin-bottom" alt="" style="width:40%">
-					<p class="w3-opacity">An 8-Bit Sample-Art of mine</p>
+			<div id="infos" class="w3-container w3-content w3-center w3-padding-64 w3-text-black" style="max-width:800px;min-height:800px;height:100vh">
+				<h2 id="appHeading" class="w3-wide">INFOS</h2>
+				<p id="appCaption" class="w3-opacity"><i>Just to clarify</i></p>
+				<div id="appContent">
+					<p class="w3-justify">This is just a Website to host my School-Presentations I made with reveal.js. Lorem ipsum
+						dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+						enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+						ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+						est laborum consectetur
+						adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div>
+						<img src="src/ACLogo8Bitgroß.png" class="w3-margin-bottom" alt="" style="width:40%">
+						<p class="w3-opacity">An 8-Bit Sample-Art of mine</p>
+					</div>
 				</div>
 			</div>
-			
+
 			<!-- The Why Me Section -->
-			<div class="w3-black  w3-center w3-text-white w3-padding-64" style="height:100vh" id="whyme">
-				<h2 class="w3-wide">WHY ME</h2>
-				<p class="w3-opacity"><i>Just to clarify again</i></p>
-				<div class="w3-display-container w3-center" style="width:100%;height:100%">
+			<div id="whyme" class="w3-black  w3-center w3-text-white w3-padding-64" style="height:100vh">
+				<h2 id="appHeading" class="w3-wide">WHY ME</h2>
+				<p id="appCaption" class="w3-opacity"><i>Just to clarify again</i></p>
+				<div id="appContent" class="w3-display-container w3-center" style="width:100%;height:100%">
 					<div class="w3-display-middle">
 						<h3 class="mySlides w3-animate-right">Innovative.</h3>
 						<h3 class="mySlides w3-animate-right">Extraordinary.</h3>
@@ -83,21 +94,26 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- The GoingFurther Section -->
-			<div class="w3-container w3-content w3-center w3-padding-64 w3-text-black" style="min-height:100vh" id="goingfurther">
-				<h2 class="w3-wide">GOING FURTHER</h2>
-				<p class="w3-opacity"><i>The three axioms of Peatral</i></p>
-				<div class="w3-row-padding" style="height:100%">
+			<div id="goingfurther" class="w3-container w3-content w3-center w3-padding-64 w3-text-black" style="min-height:100vh">
+				<h2 id="appHeading" class="w3-wide">GOING FURTHER</h2>
+				<p id="appCaption" class="w3-opacity"><i>The three axioms of Peatral</i></p>
+				<div id="appContent" class="w3-row-padding" style="height:100%">
 					<div class="w3-third">
 						<div class="w3-card w3-black">
 							<img src="src/innovative.png" class="w3-image w3-padding" style="width:50%" alt="Innovative">
 							<div class="w3-container">
 								<h2>1. AXIOM</h2>
 								<p class="w3-opacity"><i>Be: Innovative</i></p>
-								<p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+									aliquip
+									ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+									nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+									id est laborum consectetur
+									adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
@@ -107,9 +123,14 @@
 							<div class="w3-container">
 								<h2>2. AXIOM</h2>
 								<p class="w3-opacity"><i>Be: Extraordinary</i></p>
-								<p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+									aliquip
+									ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+									nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+									id est laborum consectetur
+									adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
@@ -119,50 +140,54 @@
 							<div class="w3-container">
 								<h2>3. AXIOM</h2>
 								<p class="w3-opacity"><i>Be: Dabei</i></p>
-								<p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+									aliquip
+									ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+									nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+									id est laborum consectetur
+									adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>		
 		</div>
-	</div>			
-	
-	<!-- Footer -->
-	<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-		<a href="http://www.youtube.com/channel/UCbvyOKq8tS9_GaI9GDEkaZA"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-		<a href="http://steamcommunity.com/id/peatral"><i class="fa fa-steam w3-hover-opacity"></i></a>
-		<a href="http://reddit.com/u/Peatral"><i class="fa fa-reddit w3-hover-opacity"></i></a>
-		<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-	</footer>
-	
-	<script>
-		// Automatic Slideshow - change image every 4 seconds
-		var myIndex = 0;
-		carousel();
-		
-		function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";  
+
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+			<a href="http://www.youtube.com/channel/UCbvyOKq8tS9_GaI9GDEkaZA"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			<a href="http://steamcommunity.com/id/peatral"><i class="fa fa-steam w3-hover-opacity"></i></a>
+			<a href="http://reddit.com/u/Peatral"><i class="fa fa-reddit w3-hover-opacity"></i></a>
+			<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</footer>
+
+		<script>
+			// Automatic Slideshow - change image every 4 seconds
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) { myIndex = 1 }
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 4000);
 			}
-			myIndex++;
-			if (myIndex > x.length) {myIndex = 1}    
-			x[myIndex-1].style.display = "block";  
-			setTimeout(carousel, 4000);    
-		}
-		// Used to toggle the menu on small screens when clicking on the menu button
-		function myFunction() {
-			var x = document.getElementById("navDemo");
-			if (x.className.indexOf("w3-show") == -1) {
-				x.className += " w3-show";
-				} else { 
-				x.className = x.className.replace(" w3-show", "");
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function myFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
 			}
-		}
-	</script>
-</body>
+		</script>
+	</body>
 </html>
