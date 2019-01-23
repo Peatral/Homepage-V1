@@ -1,0 +1,1 @@
+Presentation folder. Uses reveal.js -> https://github.com/hakimel/reveal.js
