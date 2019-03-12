@@ -43,7 +43,54 @@
 				</section>
 				
 				<section>
-					<h3>Definition</h3>
+					<section>
+						<h3 class="fragment shrink">Aufgabe</h3>
+						<p class="fragment">
+							Verfasst eine iterative Funktion, die die Fakultät einer Zahl berechnet. <span class="fragment">In Python.</span>
+						</p>
+					</section>
+					
+					<section data-markdown>
+						<script type="text/template">
+							## Eine Lösung
+
+							```
+							def fakultaetIterativ(n):
+								wert = n
+								zähler = n-1
+
+								while (zähler > 0):
+									wert *= zähler
+									zähler -= 1
+								
+								return wert
+							```
+						</script>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h3 class="fragment shrink">Erkennt ihr eine Regel?</h3>
+						<p class="fragment">
+							0, 1, 1, 2, 3, 5, 8, 13
+						</p>
+					
+					</section>
+					
+					<section>
+						<h3 class="fragment shrink">Es ist eine Fibonacci-Folge</h3>
+						<p class="fragment">
+							f(n) = f(n-1) + f(n-2) <br>
+							n0 = 0;
+							n1 = 1;
+						</p>
+					</section>
+					
+				</section>
+				
+				<section>
+					<h3 class="fragment shrink">Definition</h3>
 					<p>
 						<span class="fragment">Eine Folge/Funktion</span> <span class="fragment">wird in ihrer Definition</span> <span class="fragment">noch einmal</span> <span class="fragment">aufgerufen<span>.
 					</p>
@@ -56,17 +103,15 @@
 					
 					<section data-markdown>
 						<script type="text/template">
-							## Rekursion
+							## Fakultät
 
 							```
-							def fibonacciFolge(stop, folge=[0, 1]):
+							def fakultaet(n):
 							
-								folge.append(folge[len(folge) - 1] + folge[len(folge) - 2])
-								
-								if(len(folge) < stop):
-									folge = fibonacciFolge(stop, folge)
-									
-								return folge
+								if(n == 1):
+									return 1
+								else:
+									return n * fakultaet(n-1)
 							```
 						</script>
 					</section>
@@ -94,15 +139,17 @@
 					
 					<section data-markdown>
 						<script type="text/template">
-							## Fakultät
+							## Rekursion
 
 							```
-							def fakultaet(n):
+							def fibonacciFolge(stop, folge=[0, 1]):
 							
-								if(n == 1):
-									return 1
-								else:
-									return n * fakultaet(n-1)
+								folge.append(folge[len(folge) - 1] + folge[len(folge) - 2])
+								
+								if(len(folge) < stop):
+									folge = fibonacciFolge(stop, folge)
+									
+								return folge
 							```
 						</script>
 					</section>
