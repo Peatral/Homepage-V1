@@ -1,0 +1,11 @@
+{
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/embersconstruct",
+  "1.12.2": {
+    "0.1": "Initial Project", 
+	"1.0": "Added Constructs' Armory support", 
+  },
+  "promos": {
+    "1.12.2-latest": "1.0",
+    "1.12.2-recommended": "1.0",
+  }
+}
