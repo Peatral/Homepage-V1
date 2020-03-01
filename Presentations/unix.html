@@ -60,7 +60,7 @@
 							<li class="fragment fade-in-then-semi-out">1993 AT&T wird von Novell aufgekauft</li>
 						</ul>
 						<aside class="notes">
-							Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+							
 						</aside>
 					</section>
 				</section>
@@ -73,10 +73,25 @@
 					<section id="architektur-bild">			
 						<img class="fragment fade-in-then-semi-out" src="res/unix/schicht.gif"  height="300">
 						<img class="fragment fade-in-then-semi-out" src="res/unix/monolithischer_kernel.jpg"  height="300">
+					</section>
+					
+					<section>
 						<ul>
 							<li class="fragment fade-in-then-semi-out">Monolithischer Kernel</li>
-							<li class="fragment fade-in-then-semi-out">1969 PDP-7 Port von Space Travel</li>
-							<li class="fragment fade-in-then-semi-out">1969 PDP-7 Entwicklung von UNIX</li>
+							<li class="fragment fade-in-then-semi-out">Treiber und Kernel-Module laufen im privilegierten Modus</li>
+							<li class="fragment fade-in-then-semi-out">Einige Module laufen im eingeschränkten Modus</li>
+							<li class="fragment fade-in-then-semi-out">Viele Treiber können als Modul vom System dynamisch nachgeladen werden</li>
+							<li class="fragment fade-in-then-semi-out">Im System laufende Programme bekommen vom Kernel Prozessorzeit zugewiesen</li>
+							<li class="fragment fade-in-then-semi-out">Jeder Prozess bekommt einen eigenen geschützen Speicherbereich</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Jeder Prozess kann nur über Systemaufrufe auf Gerätetreiber und Betriebssystem zugreifen</li>
+							<li class="fragment fade-in-then-semi-out">Prozess läuft dabei im Benutzermodus, Kernel im Kernelmodus</li>
+							<li class="fragment fade-in-then-semi-out">Direkte Zugriffe sind nur selten unter bestimmten Bedingungen erlaubt</li>
+							<li class="fragment fade-in-then-semi-out">-> Absicherung gegen Systemabstürze</li>
+							<li class="fragment fade-in-then-semi-out">Immer mehr Einfluss von Mikrokerneln</li>
 						</ul>
 					</section>
 				</section>
