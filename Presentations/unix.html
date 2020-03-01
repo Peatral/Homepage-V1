@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+	
+	<head>
+		<meta charset="utf-8">
+
+		<title>UNIX</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>UNIX</h1>
+					<h3>Moritz, Stian und Christof<h3>
+				</section>
+				
+				<section>	
+					<section id="geschichte">				
+						<h3>Geschichte</h3>
+					</section>
+					
+					<section id="geschichte-timeline">	
+						<ul>
+							<li class="fragment fade-in-then-semi-out">1965 Multics wird veröffentlicht</li>
+							<li class="fragment fade-in-then-semi-out">1969 PDP-7 Port von Space Travel</li>
+							<li class="fragment fade-in-then-semi-out">1969 PDP-7 Entwicklung von UNIX</li>
+							<li class="fragment fade-in-then-semi-out">1971 Portierung auf PDP-11</li>
+							<li class="fragment fade-in-then-semi-out">1972-73 Portierung auf C (UNIX V4)</li>
+							<li class="fragment fade-in-then-semi-out">1977 BSD wird veröffentlicht</li>
+							<li class="fragment fade-in-then-semi-out">1979 Letzte Open-Source Version (UNIX V7)</li>
+							<li class="fragment fade-in-then-semi-out">1980er Dominierendes Betriebssystem an Universitäten</li>
+							<li class="fragment fade-in-then-semi-out">1993 AT&T wird von Novell aufgekauft</li>
+						</ul>
+						<aside class="notes">
+							Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						</aside>
+					</section>
+				</section>
+				
+				<section>	
+					<section id="architektur">				
+						<h3>Architektur</h3>
+					</section>
+					
+					<section id="architektur-bild">			
+						<img class="fragment fade-in-then-semi-out" src="res/unix/schicht.gif"  height="300">
+						<img class="fragment fade-in-then-semi-out" src="res/unix/monolithischer_kernel.jpg"  height="300">
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Monolithischer Kernel</li>
+							<li class="fragment fade-in-then-semi-out">1969 PDP-7 Port von Space Travel</li>
+							<li class="fragment fade-in-then-semi-out">1969 PDP-7 Entwicklung von UNIX</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section id="secure">
+						<h3>Probleme der Unix-Sicherheit<h3>
+					</section>
+					
+					<section>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Zugriffsberechtigungen</li>
+							<li class="fragment fade-in-then-semi-out">SSH-keys</li>
+							<li class="fragment fade-in-then-semi-out">Verwaltung der Anmeldedaten für root-Accounts</li>
+							<li class="fragment fade-in-then-semi-out">Verfolgung der Benutzeraktivitäten</li>
+							<li class="fragment fade-in-then-semi-out">Verwaltung von an Dritte abgegebene Superuser-Anmeldedaten</li>
+							<li class="fragment fade-in-then-semi-out">Effektivität/Sicherheit von Jump-Servern</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section id="einsatz">
+						<h3>Einsatzbereiche<h3>
+					</section>
+					
+					<section>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">bis 1980'er an Universitäten</li>
+						<li class="fragment fade-in-then-semi-out">heute: vielfältige Verwendung von Unix-ähnlichen Systemen wie z.B.:</li>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Smartphones</li>
+							<li class="fragment fade-in-then-semi-out">Webserver</li>
+							<li class="fragment fade-in-then-semi-out">Mess- und Steuergeräte</li>
+							<li class="fragment fade-in-then-semi-out">Haushaltsgeräte</li>
+							<li class="fragment fade-in-then-semi-out">WLAN-Router</li>
+						</ul>
+					</ul>
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
