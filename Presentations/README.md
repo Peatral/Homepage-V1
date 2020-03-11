@@ -7,3 +7,4 @@ Presentations:
 - [Schiller & Sturm und Drang](https://peatral.github.io/Presentations/schiller_sturmunddrang.html)
 - [UNIX](https://peatral.github.io/Presentations/unix.html)
 - [Witchhunt](https://peatral.github.io/Presentations/witchhunt.html)
+- [GPIO](https://peatral.github.io/Presentations/gpio.html)
