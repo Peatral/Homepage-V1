@@ -5,10 +5,11 @@
 		"1.0": "Added Constructs' Armory support",
 		"1.1": "Update-Checker and refactoring",
 		"1.1.1": "Melting recipe bugfix!!!",
-		"1.1.2": "Recipe Fix"
+		"1.1.2": "Recipe Fix",
+		"1.2.0": "Major changes and improvements"
 	},
 	"promos": {
-		"1.12.2-latest": "1.1.2",
-		"1.12.2-recommended": "1.1.2"
+		"1.12.2-latest": "1.2.0",
+		"1.12.2-recommended": "1.2.0"
 	}
 }
