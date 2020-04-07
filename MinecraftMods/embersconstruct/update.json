@@ -6,10 +6,11 @@
 		"1.1": "Update-Checker and refactoring",
 		"1.1.1": "Melting recipe bugfix!!!",
 		"1.1.2": "Recipe Fix",
-		"1.2.0": "Major changes and improvements"
+		"1.2.0": "Major changes and improvements",
+		"1.2.1": "Better language support and major bug fix"
 	},
 	"promos": {
-		"1.12.2-latest": "1.2.0",
-		"1.12.2-recommended": "1.2.0"
+		"1.12.2-latest": "1.2.1",
+		"1.12.2-recommended": "1.2.1"
 	}
 }
