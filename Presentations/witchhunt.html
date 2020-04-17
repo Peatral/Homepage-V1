@@ -7,7 +7,14 @@
 <title>Witchhunt</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/theme/white.css' : 'css/theme/black.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- <link rel="stylesheet" href="css/theme/black.css"> -->
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -63,7 +70,7 @@
 					<section>
 						<h4>The Great Chain of Being</h4>
 						<ul>
-							<li class="fragment fade-in-then-semi-out">Natural order for everything in the universe</li>
+							<li class="fragment fade-in-then-semi-out">natural order for everything in the universe</li>
 							<ul>
 								<li class="fragment fade-in-then-semi-out">god</li>
 								<li class="fragment fade-in-then-semi-out">angels</li>
@@ -71,7 +78,7 @@
 								<li class="fragment fade-in-then-semi-out">plants</li>
 								<li class="fragment fade-in-then-semi-out">minerals</li>
 							</ul>
-							<li class="fragment fade-in-then-semi-out">Witches => Chaos</li>
+							<li class="fragment fade-in-then-semi-out">witches => chaos</li>
 						</ul>
 					</section>
 					<section>
