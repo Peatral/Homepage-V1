@@ -4,6 +4,7 @@
 		<title>Auth</title>
 	</head>
 	<body>
+	<?php header("Access-Control-Allow-Origin: *"); ?>
 	<script>
 	
 	const urlParams = new URLSearchParams(window.location.search);
