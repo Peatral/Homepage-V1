@@ -28,7 +28,7 @@
 				color: #fff;
 				text-align: center;
 				border-radius: 6px;
-				padding: 5px 0;
+				padding: 5px 3px;
 				position: absolute;
 				z-index: 1;
 				bottom: 150%;
@@ -49,6 +49,10 @@
 
 			.tooltip:hover .tooltiptext {
 				visibility: visible;
+			}
+			
+			.fav-size-med {
+				 font-size: 1.5em;
 			}
 		</style>
 		<script src="https://kit.fontawesome.com/f885968b9e.js" crossorigin="anonymous"></script>
@@ -85,6 +89,7 @@
 			<a href="#infos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INFOS</a>
 			<a href="#whyme" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WHY ME</a>
 			<a href="#goingfurther" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GOING FURTHER</a>
+			<a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
 			<div class="w3-dropdown-hover">
 				<button class="w3-padding-large w3-button" title="More">PRESENTATIONS<i class="fa fa-caret-down"></i></button>
 				<div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -103,7 +108,7 @@
 		<div class="w3-content w3-animate-opacity w3-text-white" style="max-width:2000px;margin-top:46px">
 			<!-- screen center -->
 			<div class="w3-display-container w3-center w3-hide-small">
-				<img src="src/back.jpg" class="w3-image">
+				<img src="src/LampFull.png" class="w3-image" style="width:100%;height:100vh;object-fit:cover">
 				<div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
 					<h1 class="w3-jumbo w3-animate-top">Nothing here!</h1>
 					<hr class="w3-border-grey" style="margin:auto;width:40%">
@@ -125,7 +130,7 @@
 					</p>
 					<div>
 						<img src="src/ACLogo8Bitgroß.png" alt="Assassin's Creed" style="width:40%">
-						<p class="w3-opacity">An 8-Bit Sample-Art of mine</p>
+						<p class="w3-opacity">An sample Pixelart of mine</p>
 					</div>
 				</div>
 			</div>
@@ -220,9 +225,9 @@
 								<div class="w3-container">
 									<h2>Embers' Construct</h2>
 									<p class="w3-opacity"><i>A Tinkers'-Embers-Bridge</i></p>
-									<a href="https://www.curseforge.com/minecraft/mc-mods/embersconstruct"><i class="fas fa-home w3-hover-opacity tooltip"><span class="tooltiptext">Curseforge Page</span></i></a>
-									<a href="https://github.com/Peatral/EmbersConstruct"><i class="fab fa-github w3-hover-opacity tooltip"><span class="tooltiptext">Github Repository</span></i></a>
-									<p class="w3-justify">Looking around I just didn't find the reght mod that fulfilled this purpose.
+								<a href="https://www.curseforge.com/minecraft/mc-mods/embersconstruct" class="tooltip"><i class="fav-size-med fas fa-home w3-hover-opacity"></i><span class="tooltiptext">Curseforge Page</span></a>
+									<a href="https://github.com/Peatral/EmbersConstruct" class="tooltip"><i class="fav-size-med fab fa-github w3-hover-opacity"></i><span class="tooltiptext">Github Repository</span></a>
+									<p class="w3-justify">Looking around I just didn't find the right mod that fulfilled this purpose.
 										Me, having modding experience (although I never finished/published one before) took the task on myself and created Embers' Construct.
 										Although it is still in heavy development I actually released it and updated it several times till now.
 									</p>
@@ -234,8 +239,8 @@
 								<div class="w3-container">
 									<h2>AniSync</h2>
 									<p class="w3-opacity"><i>A MAL to AniList Syncing-App</i></p>
-									<a href="https://trello.com/b/Jpnengvn/anisync"><i class="fab fa-trello w3-hover-opacity tooltip"><span class="tooltiptext">Trello Board</span></i></a>
-									<a href="https://github.com/Peatral/AniSync/"><i class="fab fa-github w3-hover-opacity tooltip"><span class="tooltiptext">Github Repository</span></i></a>
+									<a href="https://trello.com/b/Jpnengvn/anisync" class="tooltip"><i class="fav-size-med fab fa-trello w3-hover-opacity"></i><span class="tooltiptext">Trello Board</span></a>
+									<a href="https://github.com/Peatral/AniSync/" class="tooltip"><i class="fav-size-med fab fa-github w3-hover-opacity"></i><span class="tooltiptext">Github Repository</span></a>
 									<p class="w3-justify">I used MAL before but then a friend came to me and said: "AniList is much better!". I looked and it and answered: 
 										"Yup, that's right. But I still will use MAL because I can sync my progress directly with my profile through the application I use to watch my stuff. 
 										But I don't want to manually sync those profiles. Ok, I just make an app for it."
