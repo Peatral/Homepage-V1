@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<title>Peatral</title>
+	<head>
+		<title>Peatral</title>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-site-verification" content="4CGWEICqGTCCVDp-CKksphEwI0jhARtpZzlzBXh53g4" />
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" href="src/icon.png" type="image/x-icon" />
-	<style>
-		body {
-			font-family: "Lato", sans-serif
-		}
-	</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="4CGWEICqGTCCVDp-CKksphEwI0jhARtpZzlzBXh53g4" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="src/icon.png" type="image/x-icon" />
+		<style>
+			body {
+				font-family: "Lato", sans-serif
+			}
+			
+			.tooltip {
+				position: relative;
+				display: inline-block;
+				/*border-bottom: 1px dotted black;*/
+			}
 
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: black;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 0;
+				position: absolute;
+				z-index: 1;
+				bottom: 150%;
+				left: 50%;
+				margin-left: -60px;
+			}
+
+			.tooltip .tooltiptext::after {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -5px;
+				border-width: 5px;
+				border-style: solid;
+				border-color: black transparent transparent transparent;
+			}
+
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+			}
+		</style>
+		<script src="https://kit.fontawesome.com/f885968b9e.js" crossorigin="anonymous"></script>
+	</head>
 	<body>
 
 		<!-- Navbar -->
@@ -112,7 +150,7 @@
 				<div class="w3-row-padding" style="height:100%">
 					<div class="w3-third">
 						<div class="w3-card w3-black">
-							<img src="src/innovative.png" class="w3-image w3-padding" style="width:50%" alt="Innovative">
+							<img src="src/icons/innovative.png" class="w3-image w3-padding" style="width:50%" alt="Innovative">
 							<div class="w3-container">
 								<h2>1. AXIOM</h2>
 								<p class="w3-opacity"><i>Be: Innovative</i></p>
@@ -129,7 +167,7 @@
 					</div>
 					<div class="w3-third">
 						<div class="w3-card w3-black">
-							<img src="src/extraordinary.png" class="w3-image w3-padding" style="width:50%" alt="Extraordinary">
+							<img src="src/icons/extraordinary.png" class="w3-image w3-padding" style="width:50%" alt="Extraordinary">
 							<div class="w3-container">
 								<h2>2. AXIOM</h2>
 								<p class="w3-opacity"><i>Be: Extraordinary</i></p>
@@ -146,7 +184,7 @@
 					</div>
 					<div class="w3-third">
 						<div class="w3-card w3-black">
-							<img src="src/dabei.png" class="w3-image w3-padding" style="width:50%" alt="Dabei">
+							<img src="src/icons/dabei.png" class="w3-image w3-padding" style="width:50%" alt="Dabei">
 							<div class="w3-container">
 								<h2>3. AXIOM</h2>
 								<p class="w3-opacity"><i>Be: Dabei</i></p>
@@ -166,28 +204,28 @@
 			
 			<!-- The Projects Section -->
 			<div id="projects" class="w3-black w3-center w3-text-white w3-padding-64" style="min-height:100vh">
-				<h2 id="appHeading" class="w3-wide">Projects</h2>
-				<p id="appCaption" class="w3-opacity"><i>What I am working on</i></p>
+				<h2 class="w3-wide">Projects</h2>
+				<p class="w3-opacity"><i>What I am working on</i></p>
 				<div class=" w3-content w3-container">
-					<div id="appContent" class="w3-content" style="max-width:800px">
+					<div class="w3-content" style="max-width:800px">
 						<p class="w3-justify">
 						I am working in my freetime on a handful projects. 
 						These projects couldn't be more different but that's the kind of person I am.
 						From Minecraft mods to random apps that make my life easier, eveything's there.
 							</p>
 					</div>
-					<div id="appContent" class="w3-row-padding">
+					<div class="w3-row-padding">
 						<div class="w3-half">
 							<div class="w3-card w3-white" style="min-height:60vh">
 								<div class="w3-container">
 									<h2>Embers' Construct</h2>
 									<p class="w3-opacity"><i>A Tinkers'-Embers-Bridge</i></p>
+									<a href="https://www.curseforge.com/minecraft/mc-mods/embersconstruct"><i class="fas fa-home w3-hover-opacity tooltip"><span class="tooltiptext">Curseforge Page</span></i></a>
+									<a href="https://github.com/Peatral/EmbersConstruct"><i class="fab fa-github w3-hover-opacity tooltip"><span class="tooltiptext">Github Repository</span></i></a>
 									<p class="w3-justify">Looking around I just didn't find the reght mod that fulfilled this purpose.
 										Me, having modding experience (although I never finished/published one before) took the task on myself and created Embers' Construct.
-										Although it is still in heavy development I actually released it and updated it several times till now. 
-										You can find the repository <a href="https://github.com/Peatral/EmbersConstruct" target="_blank">here</a> and the project page 
-										<a href="https://www.curseforge.com/minecraft/mc-mods/embersconstruct" target="_blank">here</a>.</p>
-										</p>
+										Although it is still in heavy development I actually released it and updated it several times till now.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -196,12 +234,14 @@
 								<div class="w3-container">
 									<h2>AniSync</h2>
 									<p class="w3-opacity"><i>A MAL to AniList Syncing-App</i></p>
+									<a href="https://trello.com/b/Jpnengvn/anisync"><i class="fab fa-trello w3-hover-opacity tooltip"><span class="tooltiptext">Trello Board</span></i></a>
+									<a href="https://github.com/Peatral/AniSync/"><i class="fab fa-github w3-hover-opacity tooltip"><span class="tooltiptext">Github Repository</span></i></a>
 									<p class="w3-justify">I used MAL before but then a friend came to me and said: "AniList is much better!". I looked and it and answered: 
 										"Yup, that's right. But I still will use MAL because I can sync my progress directly with my profile through the application I use to watch my stuff. 
 										But I don't want to manually sync those profiles. Ok, I just make an app for it."
 										So time passed and I progressed further and further but because I don't want anyone to die from my app there is no release till now. 
 										But to "enjoy" it, you can just compile it yourself via Android Studio. 
-										You can find the repository <a href="https://github.com/Peatral/AniSync/" target="_blank">here</a> and the Trelloboard <a href="https://trello.com/b/Jpnengvn/anisync" target="_blank">here</a>.</p>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -213,11 +253,14 @@
 
 		<!-- Footer -->
 		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-			<a href="http://www.youtube.com/channel/UCbvyOKq8tS9_GaI9GDEkaZA"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-			<a href="http://steamcommunity.com/id/peatral"><i class="fa fa-steam w3-hover-opacity"></i></a>
-			<a href="http://reddit.com/u/Peatral"><i class="fa fa-reddit w3-hover-opacity"></i></a>
-			<a href="https://twitter.com/TheRealPeatral"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-			<a href="https://twitch.tv/Peatral"><i class="fa fa-twitch w3-hover-opacity"></i></a>
+			<a href="http://www.youtube.com/channel/UCbvyOKq8tS9_GaI9GDEkaZA"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+			<a href="http://steamcommunity.com/id/peatral"><i class="fab fa-steam w3-hover-opacity"></i></a>
+			<a href="http://reddit.com/u/Peatral"><i class="fab fa-reddit w3-hover-opacity"></i></a>
+			<a href="https://twitter.com/TheRealPeatral"><i class="fab fa-twitter w3-hover-opacity"></i></a>
+			<a href="https://twitch.tv/Peatral"><i class="fab fa-twitch w3-hover-opacity"></i></a>
+			<a href="https://twitch.tv/Peatral"><i class="fab fa-anilist w3-hover-opacity"></i></a>
+			<a href="https://github.com/Peatral"><i class="fab fa-github w3-hover-opacity"></i></a>
+			
 			<p class="w3-medium">©2018-2020 Christof Reimers | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 		</footer>
 
