@@ -8,10 +8,11 @@
 		"1.1.2": "Recipe Fix",
 		"1.2.0": "Major changes and improvements",
 		"1.2.1": "Better language support and major bug fix",
-		"1.2.2": "More Fixes"
+		"1.2.2": "More Fixes",
+		"1.2.3": "Possibility to remove recipes from the Tinkers Smeltery"
 	},
 	"promos": {
-		"1.12.2-latest": "1.2.2",
-		"1.12.2-recommended": "1.2.2"
+		"1.12.2-latest": "1.2.3",
+		"1.12.2-recommended": "1.2.3"
 	}
 }
