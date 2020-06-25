@@ -10,11 +10,10 @@
 		"1.2.1": "Better language support and major bug fix",
 		"1.2.2": "More Fixes",
 		"1.2.3": "Possibility to remove recipes from the Tinkers Smeltery",
-		"1.2.4": "Recipe Fix, Dust Stamping, Proxy Overhaul",
-		"1.2.4-hotfix": "Fixed startup crash"
+		"1.2.4": "Recipe Fix, Dust Stamping, Proxy Overhaul"
 	},
 	"promos": {
-		"1.12.2-latest": "1.2.4-hotfix",
-		"1.12.2-recommended": "1.2.4-hotfix"
+		"1.12.2-latest": "1.2.4",
+		"1.12.2-recommended": "1.2.4"
 	}
 }
