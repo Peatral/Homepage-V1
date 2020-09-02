@@ -39,11 +39,9 @@
 						</p>
 					</section>
 					
-					<section data-markdown>
-						<script type="text/template">
-							## Eine Lösung
-
-							```
+					<section>
+						<h3 class="fragment shrink">Eine Lösung</h3>
+						<pre class="fragment fade-in"><code data-trim data-noescape data-line-numbers class="python">
 							def fakultaetIterativ(n):
 								wert = n
 								zähler = n-1
@@ -53,8 +51,7 @@
 									zähler -= 1
 								
 								return wert
-							```
-						</script>
+						</code></pre>
 					</section>
 				</section>
 				
@@ -90,26 +87,21 @@
 						<h3>Beispiele</h3>
 					</section>
 					
-					<section data-markdown>
-						<script type="text/template">
-							## Fakultät
-
-							```
+					<section>
+						<h3 class="fragment shrink">Fakultät</h3>
+						<pre class="fragment fade-in"><code data-trim data-noescape data-line-numbers class="python">
 							def fakultaet(n):
 							
 								if(n == 1):
 									return 1
 								else:
 									return n * fakultaet(n-1)
-							```
-						</script>
+						</code></pre>
 					</section>
 					
-					<section data-markdown>
-						<script type="text/template">
-							## Kaskardenartige Rekursion
-
-							```
+					<section>
+						<h3 class="fragment shrink">Kaskardenartige Rekursion</h3>
+						<pre class="fragment fade-in"><code data-trim data-noescape data-line-numbers class="python">
 							def fibonacciWert(n):
 								
 								wert = 0
@@ -122,12 +114,11 @@
 									wert = 0
 								
 								return wert
-							```
-							<div class="fragment">
-								>>>fibonacciWert(5) <br>
-								5
-							</div>
-						</script>
+						</code></pre>
+						<div class="fragment">
+							>>>fibonacciWert(5) <br>
+							5
+						</div>
 					</section>
 					
 					<section>
@@ -138,11 +129,9 @@
 						</p>
 					</section>
 					
-					<section data-markdown>
-						<script type="text/template">
-							## Rekursion
-
-							```
+					<section>
+						<h3 class="fragment shrink">Rekursion</h3>
+						<pre class="fragment fade-in"><code data-trim data-noescape data-line-numbers class="python">
 							def fibonacciFolge(stop, folge=[0, 1]):
 							
 								folge.append(folge[len(folge) - 1] + folge[len(folge) - 2])
@@ -151,13 +140,12 @@
 									folge = fibonacciFolge(stop, folge)
 									
 								return folge
-							```
+						</code></pre>
 							
-							<div class="fragment">
-								>>>fibonacciFolge(5) <br>
-								[0,1,1,2,3]
-							</div>
-						</script>
+						<div class="fragment">
+							>>>fibonacciFolge(5) <br>
+							[0,1,1,2,3]
+						</div>
 					</section>
 				</section>
 			</div>
@@ -171,7 +159,10 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			Reveal.configure({ pdfSeparateFragments : false })
+			Reveal.configure({ 
+				pdfSeparateFragments: false, 
+				pdfMaxPagesPerSlide: 1 
+			})
 			Reveal.initialize({
 				controls: true,
 				progress: true,

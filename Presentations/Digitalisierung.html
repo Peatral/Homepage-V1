@@ -115,7 +115,10 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			Reveal.configure({ pdfSeparateFragments : false })
+			Reveal.configure({ 
+				pdfSeparateFragments: false, 
+				pdfMaxPagesPerSlide: 1 
+			})
 			Reveal.initialize({
 				controls: true,
 				progress: true,
