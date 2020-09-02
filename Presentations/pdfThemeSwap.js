@@ -1,5 +1,12 @@
-var link = document.createElement( 'link' );
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = window.location.search.match( /print-pdf/gi ) ? 'dist/theme/white.css' : 'dist/theme/black.css';
-document.getElementsByTagName( 'head' )[0].appendChild( link );
+if (window.location.search.match( /print-pdf/gi )) {
+    var theme = document.createElement( 'link' );
+    theme.rel = 'stylesheet';
+    theme.type = 'text/css';
+    theme.href =  'dist/theme/white.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( theme );
+    var pdfcss = document.createElement( 'link' );
+    pdfcss.rel = 'stylesheet';
+    pdfcss.type = 'text/css';
+    pdfcss.href = 'print-pdf.css'
+    document.getElementsByTagName( 'head' )[0].appendChild( pdfcss );
+}
